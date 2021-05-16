@@ -1,0 +1,15 @@
+$btn-color: rgb(125, 126, 156);
+@mixin flexible-btn {
+  display: flex;
+  flex: 1;
+  height: 4em;
+  align-items: center;
+  justify-content: center;
+  font-weight: lighter;
+  font-size: 1.4em;
+}
+.clear-btn {
+  @include flexible-btn;
+  outline: 1px solid $btn-color;
+  background-color: #c5c3cd;
+}
